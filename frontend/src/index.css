@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    font-family: 'Inter', sans-serif;
+    @apply text-gray-800 bg-gray-50;
+  }
+  h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    @apply font-extrabold tracking-tighter text-gray-900;
+  }
+  h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    @apply font-bold tracking-tight text-gray-900;
+  }
+  p, span, a, label {
+    font-family: 'Inter', sans-serif;
+    @apply font-medium tracking-tight;
+  }
+  input, button {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+/* hide scrollbar for all browsers */
+.no-scrollbar::-webkit-scrollbar {
+  height: 0px;
+  width: 0px;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none;     /* Firefox */
+}
